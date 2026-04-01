@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #181B24; font-family: Arial, sans-serif;
+  color: #FFFFFF; display: flex; flex-direction: column;
+}
+.header {
+  height: 60pt; background: #0a0e1a; display: flex; align-items: center; padding-left: 30pt;
+  border-bottom: 2pt solid #B165FB;
+}
+h1 { font-size: 28pt; color: #B165FB; margin: 0; }
+.content {
+  flex: 1; padding: 30pt; display: flex; flex-direction: row;
+}
+.left { width: 50%; }
+.right { width: 50%; display: flex; align-items: center; justify-content: center; }
+h2 { font-size: 20pt; color: #40695B; margin-top: 0; padding-bottom: 5pt; }
+.subtitle-box { border-bottom: 1pt solid #40695B; margin-bottom: 10pt; }
+ul { font-size: 16pt; line-height: 1.6; color: #e0e0e0; }
+.placeholder { 
+  background: #1a1f2e; border: 2pt dashed #40695B; color: #40695B;
+  display: flex; align-items: center; justify-content: center; text-align: center;
+  width: 100%; height: 250pt; border-radius: 8pt;
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>Technical Architecture</h1>
+  </div>
+  <div class="content">
+    <div class="left">
+      <div class="subtitle-box"><h2>The Engine Room</h2></div>
+      <ul>
+        <li><b>Core Stack:</b> Python 3.11, SQLAlchemy, Streamlit</li>
+        <li><b>NLP Layer:</b> FinBERT + Ollama/Mistral 7B</li>
+        <li><b>ML Layer:</b> XGBoost Classifier (1h, 4h, 24h)</li>
+        <li><b>Database:</b> High-concurrency SQLite</li>
+        <li><b>Local Power:</b> 100% Self-Hosted, Full Privacy</li>
+      </ul>
+    </div>
+    <div class="right">
+      <div id="diag-arch" class="placeholder">
+        <p>[Architecture Diagram Placeholder]</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

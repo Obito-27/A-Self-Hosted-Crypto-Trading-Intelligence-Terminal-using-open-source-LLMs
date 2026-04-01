@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  crypto-terminal:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+      - hf_cache:/root/.cache/huggingface
+    env_file:
+      - .env.local
+    environment:
+      - DEMO_MODE=${DEMO_MODE:-false}
+      - DB_PATH=/app/data/crypto_terminal.db
+    command: python main.py --mode demo
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+volumes:
+  hf_cache:
