@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🤖 CryptoTerminal AI
 ### Self-Hosted LLM Crypto Sentiment & Price Prediction Terminal
 #### NMIMS INNOVATHON 2026 — AI & Data Intelligence Track
@@ -102,3 +103,7 @@ crypto-terminal/
 
 ## ⚠️ Disclaimer
 Educational/simulation tool only. Not financial advice. No real money trading.
+=======
+# A-Self-Hosted-Crypto-Trading-Intelligence-Terminal-using-open-source-LLMs
+analyze social media  sentiment, news feeds, on-chain data, and historical price patterns to predict short-term crypto price  movements. The system should run entirely locally (no expensive cloud APIs), provide real-time sentiment scoring, generate actionable trading signals, and help traders make data-driven decisions. 
+>>>>>>> ea8eaa5f0955c39d56238fdfe2e5401f80f1bfe9
